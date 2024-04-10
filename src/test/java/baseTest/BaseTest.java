@@ -1,5 +1,7 @@
 package baseTest;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -36,6 +38,7 @@ public class BaseTest {
 	}
 	
 	
+	@AfterMethod
 	@AfterClass
 	public void tearDown() {
 		driver.quit();

@@ -49,8 +49,9 @@ public class FormPage extends AndroidGestures{
 		
 	}
 	
-	public void clickOnLsetsShopBtn() {
+	public ProductCatalogPage clickOnLsetsShopBtn() {
 		letsShopBtn.click();
+		return new ProductCatalogPage(driver);
 		
 	}
 
