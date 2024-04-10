@@ -6,9 +6,4 @@
       <class name="testcases.FormPageTest"/>
     </classes>
   </test> <!-- Test -->
-    <test name="ProductCatalogPageTest">
-    <classes>
-      <class name="testcases.ProductCatalogPageTest"/>
-    </classes>
-  </test> <!-- Test -->
 </suite> <!-- Suite -->

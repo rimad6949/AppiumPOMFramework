@@ -1,13 +1,13 @@
 package testcases;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 
 import com.pages.android.FormPage;
+import com.pages.android.ProductCatalogPage;
 
 import baseTest.BaseTest;
 
-public class FormPageTest extends BaseTest{
+public class AppTest extends BaseTest{
 	
 	@Test
 	public void fillForm() throws InterruptedException {
@@ -17,7 +17,10 @@ public class FormPageTest extends BaseTest{
 		form.enterName("Rima");
 		form.selectGender("female");
 		form.selectCountry("Argentina");
-		form.clickOnLsetsShopBtn();
+		ProductCatalogPage catalog = form.clickOnLsetsShopBtn();
+		catalog.addItemToCart(0);
+		catalog.addItemToCart(0);
+		catalog.goToCartPage();
 	
 	}
 
