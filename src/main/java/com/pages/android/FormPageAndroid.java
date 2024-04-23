@@ -7,26 +7,26 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import utilities.AndroidGestures;
 
-public class FormPage extends AndroidGestures{
+public class FormPageAndroid extends AndroidGestures{
 	
-	public FormPage(AndroidDriver driver) {
+	public FormPageAndroid(AndroidDriver driver) {
 		super(driver);
 	}
 	
 	@AndroidFindBy(id="com.androidsample.generalstore:id/nameField")
-	public WebElement nameField;
+	private WebElement nameField;
 		
 	@AndroidFindBy(id = "android:id/text1")
-	public WebElement countryDropDown;
+	private WebElement countryDropDown;
 	
 	@AndroidFindBy(xpath = "//android.widget.RadioButton[@text='Male']")
-	public WebElement genderMaleRadioBtn;
+	private WebElement genderMaleRadioBtn;
 	
 	@AndroidFindBy(xpath = "//android.widget.RadioButton[@text='Female']")
-	public WebElement genderFemaleRadioBtn;
+	private WebElement genderFemaleRadioBtn;
 	
 	@AndroidFindBy(className = "android.widget.Button")
-	public WebElement letsShopBtn;
+	private WebElement letsShopBtn;
 	
 	public void selectCountry(String countryName) {
 		countryDropDown.click();
@@ -49,9 +49,9 @@ public class FormPage extends AndroidGestures{
 		
 	}
 	
-	public ProductCatalogPage clickOnLsetsShopBtn() {
+	public ProductCatalogPageAndroid clickOnLsetsShopBtn() {
 		letsShopBtn.click();
-		return new ProductCatalogPage(driver);
+		return new ProductCatalogPageAndroid(driver);
 		
 	}
 

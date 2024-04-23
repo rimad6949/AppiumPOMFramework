@@ -3,12 +3,7 @@
 <suite name="Suite">
   <test name="FormPageTest">
     <classes>
-      <class name="testcases.FormPageTest"/>
-    </classes>
-  </test> <!-- Test -->
-    <test name="ProductCatalogPageTest">
-    <classes>
-      <class name="testcases.ProductCatalogPageTest"/>
+      <class name="testcases.AppTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

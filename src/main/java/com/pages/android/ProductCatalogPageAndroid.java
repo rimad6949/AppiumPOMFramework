@@ -8,17 +8,17 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import utilities.AndroidGestures;
 
-public class ProductCatalogPage extends AndroidGestures{
+public class ProductCatalogPageAndroid extends AndroidGestures{
 
-	public ProductCatalogPage(AndroidDriver driver) {
+	public ProductCatalogPageAndroid(AndroidDriver driver) {
 		super(driver);
 	}
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text = 'ADD TO CART']")
-	public List<WebElement> addToCart;
+	private List<WebElement> addToCart;
 	
 	@AndroidFindBy(id = "com.androidsample.generalstore:id/appbar_btn_cart")
-	public WebElement cart;
+	private WebElement cart;
 	
 	public void addItemToCart(int index) {
 		
@@ -26,8 +26,9 @@ public class ProductCatalogPage extends AndroidGestures{
 		
 	}
 	
-	public void goToCartPage() {
+	public CartPageAndroid goToCartPage() {
 		cart.click();
+		return new CartPageAndroid(driver);
 	}
 
 }
