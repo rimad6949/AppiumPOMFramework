@@ -2,6 +2,7 @@ package testcases;
 
 import org.testng.annotations.Test;
 
+import com.pages.android.CartPage;
 import com.pages.android.FormPage;
 import com.pages.android.ProductCatalogPage;
 
@@ -20,8 +21,10 @@ public class AppTest extends BaseTest{
 		ProductCatalogPage catalog = form.clickOnLsetsShopBtn();
 		catalog.addItemToCart(0);
 		catalog.addItemToCart(0);
-		catalog.goToCartPage();
-	
+		CartPage cart = catalog.goToCartPage();
+		cart.getproductList();
+		cart.getTotalAmountDisplayed();
+		cart.submitOrder();
 	}
 
 }

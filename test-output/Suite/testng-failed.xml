@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="ProductCatalogPageTest(failed)">
+  <test thread-count="5" name="FormPageTest(failed)">
     <classes>
-      <class name="testcases.ProductCatalogPageTest">
+      <class name="testcases.AppTest">
         <methods>
-          <include name="addToCart"/>
+          <include name="fillForm"/>
           <include name="tearDown"/>
           <include name="ConfigurationAppium"/>
         </methods>
-      </class> <!-- testcases.ProductCatalogPageTest -->
+      </class> <!-- testcases.AppTest -->
     </classes>
-  </test> <!-- ProductCatalogPageTest(failed) -->
+  </test> <!-- FormPageTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

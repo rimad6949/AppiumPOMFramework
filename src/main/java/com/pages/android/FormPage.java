@@ -14,19 +14,19 @@ public class FormPage extends AndroidGestures{
 	}
 	
 	@AndroidFindBy(id="com.androidsample.generalstore:id/nameField")
-	public WebElement nameField;
+	private WebElement nameField;
 		
 	@AndroidFindBy(id = "android:id/text1")
-	public WebElement countryDropDown;
+	private WebElement countryDropDown;
 	
 	@AndroidFindBy(xpath = "//android.widget.RadioButton[@text='Male']")
-	public WebElement genderMaleRadioBtn;
+	private WebElement genderMaleRadioBtn;
 	
 	@AndroidFindBy(xpath = "//android.widget.RadioButton[@text='Female']")
-	public WebElement genderFemaleRadioBtn;
+	private WebElement genderFemaleRadioBtn;
 	
 	@AndroidFindBy(className = "android.widget.Button")
-	public WebElement letsShopBtn;
+	private WebElement letsShopBtn;
 	
 	public void selectCountry(String countryName) {
 		countryDropDown.click();

@@ -15,10 +15,10 @@ public class ProductCatalogPage extends AndroidGestures{
 	}
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text = 'ADD TO CART']")
-	public List<WebElement> addToCart;
+	private List<WebElement> addToCart;
 	
 	@AndroidFindBy(id = "com.androidsample.generalstore:id/appbar_btn_cart")
-	public WebElement cart;
+	private WebElement cart;
 	
 	public void addItemToCart(int index) {
 		
@@ -26,8 +26,9 @@ public class ProductCatalogPage extends AndroidGestures{
 		
 	}
 	
-	public void goToCartPage() {
+	public CartPage goToCartPage() {
 		cart.click();
+		return new CartPage(driver);
 	}
 
 }
