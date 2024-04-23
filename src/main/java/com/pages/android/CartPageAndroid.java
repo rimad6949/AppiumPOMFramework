@@ -6,14 +6,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.devtools.v116.systeminfo.SystemInfo;
 import org.testng.Assert;
 
-import com.basePage.android.BasePage;
+import com.basePage.android.BasePageAndroid;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class CartPage extends BasePage {
+public class CartPageAndroid extends BasePageAndroid {
 
-	public CartPage(AndroidDriver driver) {
+	public CartPageAndroid(AndroidDriver driver) {
 		super(driver);
 
 	}

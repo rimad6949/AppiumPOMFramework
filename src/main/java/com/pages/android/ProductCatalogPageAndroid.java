@@ -8,9 +8,9 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import utilities.AndroidGestures;
 
-public class ProductCatalogPage extends AndroidGestures{
+public class ProductCatalogPageAndroid extends AndroidGestures{
 
-	public ProductCatalogPage(AndroidDriver driver) {
+	public ProductCatalogPageAndroid(AndroidDriver driver) {
 		super(driver);
 	}
 	
@@ -26,9 +26,9 @@ public class ProductCatalogPage extends AndroidGestures{
 		
 	}
 	
-	public CartPage goToCartPage() {
+	public CartPageAndroid goToCartPage() {
 		cart.click();
-		return new CartPage(driver);
+		return new CartPageAndroid(driver);
 	}
 
 }

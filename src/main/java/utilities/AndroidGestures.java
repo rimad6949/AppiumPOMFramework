@@ -5,13 +5,13 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 
-import com.basePage.android.BasePage;
+import com.basePage.android.BasePageAndroid;
 import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 
-public class AndroidGestures extends BasePage{
+public class AndroidGestures extends BasePageAndroid{
 	
 	public AndroidGestures(AndroidDriver driver) {
 		super(driver);

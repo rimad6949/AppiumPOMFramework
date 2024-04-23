@@ -7,9 +7,9 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import utilities.AndroidGestures;
 
-public class FormPage extends AndroidGestures{
+public class FormPageAndroid extends AndroidGestures{
 	
-	public FormPage(AndroidDriver driver) {
+	public FormPageAndroid(AndroidDriver driver) {
 		super(driver);
 	}
 	
@@ -49,9 +49,9 @@ public class FormPage extends AndroidGestures{
 		
 	}
 	
-	public ProductCatalogPage clickOnLsetsShopBtn() {
+	public ProductCatalogPageAndroid clickOnLsetsShopBtn() {
 		letsShopBtn.click();
-		return new ProductCatalogPage(driver);
+		return new ProductCatalogPageAndroid(driver);
 		
 	}
 
