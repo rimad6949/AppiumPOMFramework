@@ -39,7 +39,6 @@ public class BaseTestAndroid {
 	
 	
 	@AfterMethod
-	@AfterClass
 	public void tearDown() {
 		driver.quit();
 		service.stop();
