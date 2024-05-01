@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.AppTest">
+      <class name="testcases.AppTestiOS">
         <methods>
-          <include name="fillForm"/>
-          <include name="tearDown"/>
+          <include name="appTest"/>
           <include name="ConfigurationAppium"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- testcases.AppTest -->
+      </class> <!-- testcases.AppTestiOS -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
