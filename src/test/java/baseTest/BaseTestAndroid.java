@@ -1,11 +1,8 @@
 package baseTest;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.time.Duration;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -38,7 +35,7 @@ public class BaseTestAndroid {
 	}
 	
 	
-	@AfterMethod
+	@AfterClass
 	public void tearDown() {
 		driver.quit();
 		service.stop();

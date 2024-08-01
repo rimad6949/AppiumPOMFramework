@@ -26,8 +26,9 @@ public class ProductCatalogPageAndroid extends AndroidGestures{
 		
 	}
 	
-	public CartPageAndroid goToCartPage() {
+	public CartPageAndroid goToCartPage() throws InterruptedException {
 		cart.click();
+		Thread.sleep(2000);
 		return new CartPageAndroid(driver);
 	}
 
