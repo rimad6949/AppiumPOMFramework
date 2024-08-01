@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 30 19:00:46 PDT 2024</td>
+<td>Started on:</td><td>Thu Aug 01 11:12:02 PDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>68 seconds (68612 ms)</td>
+<tr><td>Total time:</td><td>14 seconds (14703 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,147 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testcases.AppTestiOS.ConfigurationAppium()'><b>ConfigurationAppium</b><br>Test class: testcases.AppTestiOS</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error running &apos;install&apos;: An error was encountered processing the command (domain=IXUserPresentableErrorDomain, code=4):
-App installation failed: “UIKitCatalog” Needs to Be Updated
-This app needs to be updated by the developer to work on this version of iOS.
-Failed to find matching arch for input file: /Users/rimadas/Library/Developer/CoreSimulator/Devices/2FCAF97F-A0BF-475E-9B8E-F626DA632EE8/data/Library/Caches/com.apple.mobile.installd.staging/temp.XOKQY8/extracted/UIKitCatalog.app/UIKitCatalog
-Underlying error (domain=IXUserPresentableErrorDomain, code=4):
-	“UIKitCatalog” Needs to Be Updated
-	This app needs to be updated by the developer to work on this version of iOS. 
-Host info: host: &apos;Rimas-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1483:53ae:1d19:3978%en0&apos;
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3&apos;, java.version: &apos;16.0.1&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [null, newSession {capabilities=[{appium:wdaLaunchTimeout=10000, appium:deviceName=iPhone 15 Pro, appium:automationName=XCuiTest, platformName=IOS, appium:app=/Users/rimadas/eclipse-workspace/AppiumPOMFramework/src/test/java/resources/UIKitCatalog.app}], desiredCapabilities=Capabilities {appium:app: /Users/rimadas/eclipse-work..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:wdaLaunchTimeout: 10000, platformName: IOS}}]
-Capabilities {appium:app: /Users/rimadas/eclipse-work..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:wdaLaunchTimeout: 10000, platformName: IOS}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
-	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:101)
-	at baseTest.BaseTestiOS.ConfigurationAppium(BaseTestiOS.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1240232440", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1240232440'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error running &apos;install&apos;: An error was encountered processing the command (domain=IXUserPresentableErrorDomain, code=4):
-App installation failed: “UIKitCatalog” Needs to Be Updated
-This app needs to be updated by the developer to work on this version of iOS.
-Failed to find matching arch for input file: /Users/rimadas/Library/Developer/CoreSimulator/Devices/2FCAF97F-A0BF-475E-9B8E-F626DA632EE8/data/Library/Caches/com.apple.mobile.installd.staging/temp.XOKQY8/extracted/UIKitCatalog.app/UIKitCatalog
-Underlying error (domain=IXUserPresentableErrorDomain, code=4):
-	“UIKitCatalog” Needs to Be Updated
-	This app needs to be updated by the developer to work on this version of iOS. 
-Host info: host: &apos;Rimas-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1483:53ae:1d19:3978%en0&apos;
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3&apos;, java.version: &apos;16.0.1&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [null, newSession {capabilities=[{appium:wdaLaunchTimeout=10000, appium:deviceName=iPhone 15 Pro, appium:automationName=XCuiTest, platformName=IOS, appium:app=/Users/rimadas/eclipse-workspace/AppiumPOMFramework/src/test/java/resources/UIKitCatalog.app}], desiredCapabilities=Capabilities {appium:app: /Users/rimadas/eclipse-work..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:wdaLaunchTimeout: 10000, platformName: IOS}}]
-Capabilities {appium:app: /Users/rimadas/eclipse-work..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:wdaLaunchTimeout: 10000, platformName: IOS}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
-	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:101)
-	at baseTest.BaseTestiOS.ConfigurationAppium(BaseTestiOS.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>68</td>
-<td>testcases.AppTestiOS@5be6e01c</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testcases.AppTestiOS.tearDown()'><b>tearDown</b><br>Test class: testcases.AppTestiOS</td>
-<td></td>
-<td>0</td>
-<td>testcases.AppTestiOS@5be6e01c</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -216,120 +77,9 @@ Capabilities {appium:app: /Users/rimadas/eclipse-work..., appium:automationName:
 </tr>
 <tr>
 <td title='testcases.AppTestiOS.appTest()'><b>appTest</b><br>Test class: testcases.AppTestiOS</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error running &apos;install&apos;: An error was encountered processing the command (domain=IXUserPresentableErrorDomain, code=4):
-App installation failed: “UIKitCatalog” Needs to Be Updated
-This app needs to be updated by the developer to work on this version of iOS.
-Failed to find matching arch for input file: /Users/rimadas/Library/Developer/CoreSimulator/Devices/2FCAF97F-A0BF-475E-9B8E-F626DA632EE8/data/Library/Caches/com.apple.mobile.installd.staging/temp.XOKQY8/extracted/UIKitCatalog.app/UIKitCatalog
-Underlying error (domain=IXUserPresentableErrorDomain, code=4):
-	“UIKitCatalog” Needs to Be Updated
-	This app needs to be updated by the developer to work on this version of iOS. 
-Host info: host: &apos;Rimas-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1483:53ae:1d19:3978%en0&apos;
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3&apos;, java.version: &apos;16.0.1&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [null, newSession {capabilities=[{appium:wdaLaunchTimeout=10000, appium:deviceName=iPhone 15 Pro, appium:automationName=XCuiTest, platformName=IOS, appium:app=/Users/rimadas/eclipse-workspace/AppiumPOMFramework/src/test/java/resources/UIKitCatalog.app}], desiredCapabilities=Capabilities {appium:app: /Users/rimadas/eclipse-work..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:wdaLaunchTimeout: 10000, platformName: IOS}}]
-Capabilities {appium:app: /Users/rimadas/eclipse-work..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:wdaLaunchTimeout: 10000, platformName: IOS}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
-	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:101)
-	at baseTest.BaseTestiOS.ConfigurationAppium(BaseTestiOS.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace221861886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace221861886'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error running &apos;install&apos;: An error was encountered processing the command (domain=IXUserPresentableErrorDomain, code=4):
-App installation failed: “UIKitCatalog” Needs to Be Updated
-This app needs to be updated by the developer to work on this version of iOS.
-Failed to find matching arch for input file: /Users/rimadas/Library/Developer/CoreSimulator/Devices/2FCAF97F-A0BF-475E-9B8E-F626DA632EE8/data/Library/Caches/com.apple.mobile.installd.staging/temp.XOKQY8/extracted/UIKitCatalog.app/UIKitCatalog
-Underlying error (domain=IXUserPresentableErrorDomain, code=4):
-	“UIKitCatalog” Needs to Be Updated
-	This app needs to be updated by the developer to work on this version of iOS. 
-Host info: host: &apos;Rimas-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1483:53ae:1d19:3978%en0&apos;
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3&apos;, java.version: &apos;16.0.1&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [null, newSession {capabilities=[{appium:wdaLaunchTimeout=10000, appium:deviceName=iPhone 15 Pro, appium:automationName=XCuiTest, platformName=IOS, appium:app=/Users/rimadas/eclipse-workspace/AppiumPOMFramework/src/test/java/resources/UIKitCatalog.app}], desiredCapabilities=Capabilities {appium:app: /Users/rimadas/eclipse-work..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:wdaLaunchTimeout: 10000, platformName: IOS}}]
-Capabilities {appium:app: /Users/rimadas/eclipse-work..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:wdaLaunchTimeout: 10000, platformName: IOS}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
-	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:101)
-	at baseTest.BaseTestiOS.ConfigurationAppium(BaseTestiOS.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testcases.AppTestiOS@5be6e01c</td></tr>
+<td></td>
+<td>7</td>
+<td>testcases.AppTestiOS@6af93788</td></tr>
 </table><p>
 </body>
 </html>
