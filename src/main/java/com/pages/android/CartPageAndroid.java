@@ -11,6 +11,8 @@ import com.basePage.android.BasePageAndroid;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
+//Implementing page object factory pattern to drive element locators to the tests
+
 public class CartPageAndroid extends BasePageAndroid {
 
 	public CartPageAndroid(AndroidDriver driver) {

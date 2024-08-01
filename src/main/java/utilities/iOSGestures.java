@@ -11,6 +11,8 @@ import com.basePage.ios.BasePageiOS;
 
 import io.appium.java_client.ios.IOSDriver;
 
+//Action utility classes for both ios
+
 public class iOSGestures extends BasePageiOS{
 
 	public iOSGestures(IOSDriver driver) {
