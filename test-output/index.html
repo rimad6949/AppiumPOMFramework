@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.AppTestAndroid" class="method navigator-link" hash-for-method="fillForm(Omi, male, Angola)">fillForm(Omi, male, Angola)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.AppTestAndroid" class="method navigator-link" hash-for-method="fillForm({name=Avni, country=Aruba, gender=female})">fillForm({name=Avni, country=Aruba, gender=female})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.AppTestAndroid" class="method navigator-link" hash-for-method="fillForm({name=Omi, country=Angola, gender=male})">fillForm({name=Omi, country=Angola, gender=male})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -126,10 +131,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="fillForm(Omi, male, Angola)">
-                  </a> <!-- fillForm(Omi, male, Angola) -->
+                  <a name="fillForm({name=Avni, country=Aruba, gender=female})">
+                  </a> <!-- fillForm({name=Avni, country=Aruba, gender=female}) -->
                   <span class="method-name">fillForm</span>
-                  <span class="parameters">(Omi,male,Angola)</span>
+                  <span class="parameters">({name=Avni, country=Aruba, gender=female})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillForm({name=Omi, country=Angola, gender=male})">
+                  </a> <!-- fillForm({name=Omi, country=Angola, gender=male}) -->
+                  <span class="method-name">fillForm</span>
+                  <span class="parameters">({name=Omi, country=Angola, gender=male})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +150,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/y8/sgc3v0q949g39p4qv9q9g7_c0000gn/T/testng-eclipse-327579083/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/y8/sgc3v0q949g39p4qv9q9g7_c0000gn/T/testng-eclipse-377435434/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -186,16 +199,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'fillForm')
 data.setCell(0, 2, 'testcases.AppTestAndroid')
-data.setCell(0, 3, 13387);
+data.setCell(0, 3, 18121);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'fillForm')
+data.setCell(1, 2, 'testcases.AppTestAndroid')
+data.setCell(1, 3, 13001);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -222,18 +239,38 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.AppTestAndroid</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="configuration-method before">
                 <span class="method-name">ConfigurationAppium</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">openTheFirstScreen</span>
+                <span class="method-start">5950 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">fillForm(Omi, male, Angola)</span>
-                <span class="method-start">6433 ms</span>
+                <span class="method-name">fillForm({name=Omi, country=Angola, gender=male})</span>
+                <span class="method-start">6114 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+              <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19824 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">19119 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">ConfigurationAppium</span>
+                <span class="method-start">23543 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">openTheFirstScreen</span>
+                <span class="method-start">28165 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fillForm({name=Avni, country=Aruba, gender=female})</span>
+                <span class="method-start">28252 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">46374 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
