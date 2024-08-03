@@ -6,6 +6,7 @@
       <class name="testcases.AppTestAndroid">
         <methods>
           <include name="ConfigurationAppium"/>
+          <include name="openTheFirstScreen"/>
           <include name="fillForm"/>
           <include name="tearDown"/>
         </methods>
