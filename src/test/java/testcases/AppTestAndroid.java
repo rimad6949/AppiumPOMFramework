@@ -16,7 +16,7 @@ import baseTest.BaseTestAndroid;
 
 public class AppTestAndroid extends BaseTestAndroid {
 
-	@Test(dataProvider = "getData")
+	@Test(dataProvider = "getData", groups= {"smoke"})
 	public void fillForm(HashMap<String, String> input) throws InterruptedException {
 
 		Thread.sleep(2000);
@@ -32,7 +32,7 @@ public class AppTestAndroid extends BaseTestAndroid {
 		cart.submitOrder();
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void openTheFirstScreen() {
 
 		form.setActivity();
