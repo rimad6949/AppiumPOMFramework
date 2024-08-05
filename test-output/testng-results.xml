@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-05T15:01:45 PDT" name="Suite" finished-at="2024-08-05T15:03:06 PDT" duration-ms="81199">
+  <suite started-at="2024-08-05T16:22:21 PDT" name="Suite" finished-at="2024-08-05T16:23:18 PDT" duration-ms="56842">
     <groups>
+      <group name="smoke">
+        <method signature="AppTestAndroid.fillForm(java.util.HashMap)[pri:0, instance:testcases.AppTestAndroid@7ef82753]" name="fillForm" class="testcases.AppTestAndroid"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-08-05T15:01:45 PDT" name="End to Eng Appium Framework Android" finished-at="2024-08-05T15:02:45 PDT" duration-ms="60268">
+    <test started-at="2024-08-05T16:22:21 PDT" name="End to Eng Appium Framework Android" finished-at="2024-08-05T16:23:17 PDT" duration-ms="56547">
       <class name="testcases.AppTestAndroid">
-        <test-method is-config="true" signature="ConfigurationAppium()[pri:0, instance:testcases.AppTestAndroid@750e2b97]" started-at="2024-08-05T15:01:45 PDT" name="ConfigurationAppium" finished-at="2024-08-05T15:01:57 PDT" duration-ms="11562" status="PASS">
+        <test-method is-config="true" signature="ConfigurationAppium()[pri:0, instance:testcases.AppTestAndroid@7ef82753]" started-at="2024-08-05T16:22:21 PDT" name="ConfigurationAppium" finished-at="2024-08-05T16:22:28 PDT" duration-ms="6736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigurationAppium -->
-        <test-method is-config="true" signature="openTheFirstScreen()[pri:0, instance:testcases.AppTestAndroid@750e2b97]" started-at="2024-08-05T15:01:57 PDT" name="openTheFirstScreen" finished-at="2024-08-05T15:01:57 PDT" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="openTheFirstScreen()[pri:0, instance:testcases.AppTestAndroid@7ef82753]" started-at="2024-08-05T16:22:28 PDT" name="openTheFirstScreen" finished-at="2024-08-05T16:22:28 PDT" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openTheFirstScreen -->
-        <test-method signature="fillForm(java.util.HashMap)[pri:0, instance:testcases.AppTestAndroid@750e2b97]" started-at="2024-08-05T15:01:57 PDT" name="fillForm" data-provider="getData" finished-at="2024-08-05T15:02:10 PDT" duration-ms="12848" status="PASS">
+        <test-method signature="fillForm(java.util.HashMap)[pri:0, instance:testcases.AppTestAndroid@7ef82753]" started-at="2024-08-05T16:22:28 PDT" name="fillForm" data-provider="getData" finished-at="2024-08-05T16:22:41 PDT" duration-ms="12721" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,19 +29,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AppTestAndroid@750e2b97]" started-at="2024-08-05T15:02:10 PDT" name="tearDown" finished-at="2024-08-05T15:02:15 PDT" duration-ms="5058" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AppTestAndroid@7ef82753]" started-at="2024-08-05T16:22:41 PDT" name="tearDown" finished-at="2024-08-05T16:22:46 PDT" duration-ms="4967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="ConfigurationAppium()[pri:0, instance:testcases.AppTestAndroid@750e2b97]" started-at="2024-08-05T15:02:15 PDT" name="ConfigurationAppium" finished-at="2024-08-05T15:02:21 PDT" duration-ms="6581" status="PASS">
+        <test-method is-config="true" signature="ConfigurationAppium()[pri:0, instance:testcases.AppTestAndroid@7ef82753]" started-at="2024-08-05T16:22:46 PDT" name="ConfigurationAppium" finished-at="2024-08-05T16:22:52 PDT" duration-ms="6749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigurationAppium -->
-        <test-method is-config="true" signature="openTheFirstScreen()[pri:0, instance:testcases.AppTestAndroid@750e2b97]" started-at="2024-08-05T15:02:21 PDT" name="openTheFirstScreen" finished-at="2024-08-05T15:02:21 PDT" duration-ms="161" status="PASS">
+        <test-method is-config="true" signature="openTheFirstScreen()[pri:0, instance:testcases.AppTestAndroid@7ef82753]" started-at="2024-08-05T16:22:52 PDT" name="openTheFirstScreen" finished-at="2024-08-05T16:22:53 PDT" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openTheFirstScreen -->
-        <test-method signature="fillForm(java.util.HashMap)[pri:0, instance:testcases.AppTestAndroid@750e2b97]" started-at="2024-08-05T15:02:21 PDT" name="fillForm" data-provider="getData" finished-at="2024-08-05T15:02:40 PDT" duration-ms="18276" status="PASS">
+        <test-method signature="fillForm(java.util.HashMap)[pri:0, instance:testcases.AppTestAndroid@7ef82753]" started-at="2024-08-05T16:22:53 PDT" name="fillForm" data-provider="getData" finished-at="2024-08-05T16:23:12 PDT" duration-ms="19146" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,27 +52,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AppTestAndroid@750e2b97]" started-at="2024-08-05T15:02:40 PDT" name="tearDown" finished-at="2024-08-05T15:02:45 PDT" duration-ms="5290" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AppTestAndroid@7ef82753]" started-at="2024-08-05T16:23:12 PDT" name="tearDown" finished-at="2024-08-05T16:23:17 PDT" duration-ms="5724" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.AppTestAndroid -->
     </test> <!-- End to Eng Appium Framework Android -->
-    <test started-at="2024-08-05T15:02:45 PDT" name="End to Eng Appium Framework iOS" finished-at="2024-08-05T15:03:06 PDT" duration-ms="20452">
-      <class name="testcases.AppTestiOS">
-        <test-method is-config="true" signature="ConfigurationAppium()[pri:0, instance:testcases.AppTestiOS@7ce026d3]" started-at="2024-08-05T15:02:45 PDT" name="ConfigurationAppium" finished-at="2024-08-05T15:02:53 PDT" duration-ms="7887" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ConfigurationAppium -->
-        <test-method signature="appTest()[pri:0, instance:testcases.AppTestiOS@7ce026d3]" started-at="2024-08-05T15:02:53 PDT" name="appTest" finished-at="2024-08-05T15:03:01 PDT" duration-ms="7746" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AppTestiOS@7ce026d3]" started-at="2024-08-05T15:03:01 PDT" name="tearDown" finished-at="2024-08-05T15:03:06 PDT" duration-ms="4813" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testcases.AppTestiOS -->
+    <test started-at="2024-08-05T16:23:18 PDT" name="End to Eng Appium Framework iOS" finished-at="2024-08-05T16:23:18 PDT" duration-ms="1">
     </test> <!-- End to Eng Appium Framework iOS -->
   </suite> <!-- Suite -->
 </testng-results>

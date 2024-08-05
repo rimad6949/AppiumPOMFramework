@@ -4,6 +4,18 @@
   <listeners>
     <listener class-name="utilities.Listeners"/>
   </listeners>
+  <test thread-count="5" name="End to Eng Appium Framework Android(failed)">
+    <classes>
+      <class name="testcases.AppTestAndroid">
+        <methods>
+          <include name="ConfigurationAppium"/>
+          <include name="openTheFirstScreen"/>
+          <include name="fillForm" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.AppTestAndroid -->
+    </classes>
+  </test> <!-- End to Eng Appium Framework Android(failed) -->
   <test thread-count="5" name="End to Eng Appium Framework iOS(failed)">
     <classes>
       <class name="testcases.AppTestiOS">

@@ -8,10 +8,15 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-public class Listeners implements ITestListener{
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+
+public class Listeners extends AppiumUtils implements ITestListener {
 
 	ExtentReports extent = ExtentReportNG.generateReports();
 	ExtentTest test;
+	AppiumDriver driver;
+
 	@Override
 	public void onTestStart(ITestResult result) {
 		test = extent.createTest(result.getMethod().getMethodName());
@@ -26,6 +31,20 @@ public class Listeners implements ITestListener{
 	@Override
 	public void onTestFailure(ITestResult result) {
 		test.log(Status.FAIL, result.getThrowable());
+
+		try {
+			driver = (AppiumDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		try {
+			test.addScreenCaptureFromPath(getScreenshot(result.getMethod().getMethodName(), driver),
+					result.getMethod().getMethodName());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Override
