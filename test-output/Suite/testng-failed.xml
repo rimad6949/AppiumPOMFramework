@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="FormPageTest(failed)">
+  <listeners>
+    <listener class-name="utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="End to Eng Appium Framework iOS(failed)">
     <classes>
-      <class name="testcases.AppTest">
+      <class name="testcases.AppTestiOS">
         <methods>
-          <include name="fillForm"/>
-          <include name="tearDown"/>
+          <include name="appTest"/>
           <include name="ConfigurationAppium"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- testcases.AppTest -->
+      </class> <!-- testcases.AppTestiOS -->
     </classes>
-  </test> <!-- FormPageTest(failed) -->
+  </test> <!-- End to Eng Appium Framework iOS(failed) -->
 </suite> <!-- Failed suite [Suite] -->
