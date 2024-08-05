@@ -1,33 +1,39 @@
 package baseTest;
 
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.options.XCUITestOptions;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
-import io.appium.java_client.service.local.AppiumServiceBuilder;
+import utilities.AppiumUtils;
 
 
 //Test Configurations for ios
 
-public class BaseTestiOS {
+public class BaseTestiOS extends AppiumUtils{
 	
 	public IOSDriver driver;
 	public AppiumDriverLocalService service;
 	
-	@BeforeClass
-	public void ConfigurationAppium() throws MalformedURLException {
+	
+	@BeforeMethod
+	public void ConfigurationAppium() throws IOException {
 		
-		service = new AppiumServiceBuilder()
-				.withAppiumJS(new File("//usr//local//lib//node_modules//appium//build//lib//main.js"))
-				.withIPAddress("127.0.0.1").usingPort(4723).build();
-		service.start();
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream("/Users/rimadas/eclipse-workspace/AppiumPOMFramework/src/main/java/resources/data.properties");
+		prop.load(fis);
+		
+		String ipaddress = prop.getProperty("ipAddress");
+		String port = prop.getProperty("port");
+
+		service = startAppiumServer(ipaddress, Integer.parseInt(port));
+
 		
 		XCUITestOptions options = new XCUITestOptions();
 		options.setDeviceName("iPhone 15 Pro");
@@ -35,14 +41,14 @@ public class BaseTestiOS {
 		options.setPlatformName("17.2");
 		options.setWdaLaunchTimeout(Duration.ofSeconds(20));
 		
-		driver = new IOSDriver(new URL("http://127.0.0.1:4723"), options);
+		driver = new IOSDriver(service.getUrl(), options);
 			
 	}
 	
-	@AfterClass
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
-//		service.stop();
+		service.stop();
 
 	}
 	
