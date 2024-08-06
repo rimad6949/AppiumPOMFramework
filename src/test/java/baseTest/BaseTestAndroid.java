@@ -31,7 +31,8 @@ public class BaseTestAndroid extends AppiumUtils{
 		prop.load(fis);
 		
 		/*
-		 * Explaination of the below statement
+		 * Explaination of the below statement :- 
+		 * 
 		 * If there is an ip address mentioned in the maven terminals 
 		 * then first parameter i.e "System.getProperty("ipAddress") !=null" will be execute
 		 * 
