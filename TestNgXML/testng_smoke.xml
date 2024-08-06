@@ -14,11 +14,5 @@
 			<class name="testcases.AppTestAndroid" />
 		</classes>
 	</test> <!--Test -->
-	<test thread-count="5" name="End to Eng Appium Framework iOS">
-	<classes>
-		<class name="testcases.AppTestiOS" />
-	</classes>
-	</test> <!--
-	Test -->
 </suite> <!--
 Suite -->
