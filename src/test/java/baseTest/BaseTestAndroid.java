@@ -29,7 +29,18 @@ public class BaseTestAndroid extends AppiumUtils{
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/resources/data.properties");
 		prop.load(fis);
-		String ipaddress = prop.getProperty("ipAddress");
+		
+		/*
+		 * Explaination of the below statement
+		 * If there is an ip address mentioned in the maven terminals 
+		 * then first parameter i.e "System.getProperty("ipAddress") !=null" will be execute
+		 * 
+		 * And If there is the ip address mentioned in the maven terminals is null or blank  
+		 * then "prop.getProperty("ipAddress")" will be executed
+		*/
+		
+		String ipaddress = System.getProperty("ipAddress") !=null ? System.getProperty("ipAddress") : prop.getProperty("ipAddress");
+		//String ipaddress = prop.getProperty("ipAddress");
 		String port = prop.getProperty("port");
 
 		service = startAppiumServer(ipaddress, Integer.parseInt(port));
